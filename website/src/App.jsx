@@ -5,7 +5,7 @@ function App() {
     <div className="main-container">
       {/* Header Section */}
       <header className="header">
-        <h1>TurboStack</h1>
+        <h1>RoboStack</h1>
         <div className="members">
           <a href="https://www.linkedin.com/in/savio-joseph-3a82aa290/" target="_blank" rel="noopener noreferrer">Savio Joseph</a> | 
           <a href="https://www.linkedin.com/in/jishankharbanda2005/" target="_blank" rel="noopener noreferrer"> Jishan Kharbanda</a> | 
@@ -14,7 +14,7 @@ function App() {
         <div className="links-bar">
           <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="nav-btn">Report</a>
           <a href="https://github.com/aditya-r123/RoboStack" target="_blank" rel="noopener noreferrer" className="nav-btn">Code</a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="nav-btn">Demo</a>
+          <a href="https://drive.google.com/file/d/1saefkOZ7JMBsR7isyB3fwOs-rRb12ery/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-btn">Demo</a>
         </div>
       </header>
 
@@ -22,59 +22,142 @@ function App() {
       <section className="section overview">
         <h2>Project Overview</h2>
         <p>
-          Our project goal is for the RoboSuite robot to detect blocks based on their color, and stack them such that each tower contains only blocks of a certain color. We also aim to align each tower perfectly, such that each block is aligned based on rotation and position. When the robot arm is moving around the environment, we need to also ensure it doesn't knock any of the towers and moves in a natural yet careful way.
+        The goal of this project is to develop a control
+policy for a RoboSuite robot to autonomously detect and
+manipulate colored blocks in a simulated environment,
+stacking them into towers based on color. The robot must
+identify individual blocks by color, select appropriate
+base blocks for each color category, and stack remaining
+blocks of the same color on top of their respective bases.
+Additionally, the robot must navigate the workspace
+carefully, avoiding collisions with existing towers and
+moving naturally and efficiently.
         </p>
       </section>
 
       {/* Gallery Section */}
+
       <section className="section gallery">
+      <h2>Project Images</h2>
         <div className="gallery-row">
-          {[1, 2, 3, 4, 5, 6].map((n) => (
-            <div className="gallery-item" key={n}>
-              <img src="/images/Flag_of_Mexico.svg" alt={`Example ${n}`} />
-              <div className="caption">Example {n}</div>
+          {[
+            { id: 1, src: "/custom.png", alt: "Our Custom Environment" },
+            { 
+              id: 2, 
+              src: "/milestone_2.png", 
+              alt: "Differentiating blocks by color and selecting base blocks for each color" 
+            },
+
+            { 
+              id: 3, 
+              src: "/3-3.png", 
+              alt: "3x3 stacking, one color per stack" 
+            },
+            { 
+              id: 34, 
+              src: "/2-5.png", 
+              alt: "5x2 stacking, one color per stack" 
+            },
+            { 
+              id: 5, 
+              src: "/alternating.png", 
+              alt: "2x4 stacking, red-green alternating" 
+            }
+          ].map((item) => (
+            <div className="gallery-item" key={item.id}>
+              <img src={item.src} alt={item.alt} />
+              <div className="caption">{item.alt}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* Pipeline Section */}
-      <section className="section pipeline">
-        <h2>TurboStack Pipeline</h2>
-        <img src="https://via.placeholder.com/600x180?text=Pipeline+Diagram" alt="Pipeline Diagram" className="pipeline-img" />
-        <p>
-          Overview of the TurboStack pipeline. This section describes the main steps in our approach, from perception to action execution, with modular components for easy adaptation.
-        </p>
-      </section>
+{/* Results Section (Replaces Pipeline Section) */}
+{/* Results Section (Replaces Pipeline Section) */}
+<section className="section results-summary">
+  <h2>Experimental Results</h2>
+  <p>
+    We evaluated across multiple stacking scenarios to test <strong>generalization</strong>, <strong>precision</strong>, and <strong>robustness</strong>.
+    In our <strong>baseline task</strong>, the robot successfully built <strong>three color-sorted towers</strong> using <strong>9 blocks</strong> in approximately <strong>48 seconds</strong>.
+    For more complex tasks like <strong>alternating color stacks</strong> (2 towers, 8 blocks), the robot maintained stability and completed the task in <strong>47 seconds</strong>.
+    It also performed well when building <strong>5 towers</strong> of <strong>2 blocks</strong> each, finishing in just <strong>29 seconds</strong>.
+    The most challenging task was building a <strong>single 10-block tower</strong>, which exposed the system's limits, with success up to <strong>6–7 blocks</strong> before instability from minor misalignments led to collapse.
+    These results highlight both the strengths and areas for improvement in our stacking policy.
+  </p>
+</section>
+
+
 
       {/* Results Section */}
       <section className="section results">
-        <h2>Results & Experiments</h2>
-        <img src="https://via.placeholder.com/600x120?text=Results+Table" alt="Results Table" className="results-table" />
-        <p>
-          Our experiments demonstrate the effectiveness of TurboStack in various assembly scenarios. The table above summarizes key performance metrics.
-        </p>
-        <div className="video-row">
-          <div className="video-col">
-            <video width="320" height="180" controls>
-              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="video-caption">Demo: Task 1</div>
-          </div>
-          <div className="video-col">
-            <video width="320" height="180" controls>
-              <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="video-caption">Demo: Task 2</div>
-          </div>
-        </div>
-      </section>
+  <h2>Visual Results</h2>
+  <p>
+    Our experiments demonstrate the effectiveness of RoboStack in various assembly scenarios.
+    Below are some of the visuals from the various experiments we ran.
+  </p>
+
+  <div className="video-row">
+    <div className="video-col">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/8q8GDTlBrT4"
+        title="Demo: Task 1"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      <div className="video-caption">Demo: Task 1</div>
+    </div>
+
+    <div className="video-col">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/aTthydXvJUk"
+        title="Demo: Task 2"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      <div className="video-caption">Demo: Task 2</div>
+    </div>
+  </div>
+
+  <div className="video-row">
+    <div className="video-col">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
+        title="Demo: Task 3"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      <div className="video-caption">Demo: Task 3</div>
+    </div>
+
+    <div className="video-col">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_4"
+        title="Demo: Task 4"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      <div className="video-caption">Demo: Task 4</div>
+    </div>
+  </div>
+</section>
+
 
       {/* Footer */}
       <footer className="footer">
-        <div>TurboStack &copy; 2025 | CS 188: Introduction to Robotics</div>
+        <div>RoboStack &copy; 2025 | CS 188: Introduction to Robotics</div>
       </footer>
     </div>
   );
