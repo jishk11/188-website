@@ -130,7 +130,7 @@ moving naturally and efficiently.
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_3"
+        src="https://www.youtube.com/embed/xjHbBmPk8CU"
         title="Demo: Task 3"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -143,7 +143,7 @@ moving naturally and efficiently.
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID_4"
+        src="https://www.youtube.com/embed/J4kmYzBCNS4"
         title="Demo: Task 4"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
