@@ -121,7 +121,7 @@ moving naturally and efficiently.
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <div className="video-caption">3 by 3 stacks: one color per stack</div>
+      <div className="video-caption">3 by 3 stacks: One Color Per Stack</div>
     </div>
   </div>
 
@@ -149,10 +149,26 @@ moving naturally and efficiently.
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <div className="video-caption">5 by 2 stacks: one color per stack</div>
+      <div className="video-caption">5 by 2 stacks: One Color Per Stack</div>
     </div>
   </div>
+  <div className="video-row">
+  <div className="video-col">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/x7HwSzZwq5c"
+      title="Robot recovering from failure"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+    <div className="video-caption">Robot Recovering from Failure</div>
+  </div>
+</div>
+  
 </section>
+
 
 
       {/* Footer */}
