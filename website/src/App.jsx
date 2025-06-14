@@ -12,7 +12,7 @@ function App() {
           <a href="https://www.linkedin.com/in/-aditya-rao/" target="_blank" rel="noopener noreferrer"> Aditya Rao</a>
         </div>
         <div className="links-bar">
-          <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="nav-btn">Report</a>
+          <a href="https://drive.google.com/file/d/1kIySA1xGs4lh9BzIW4-3ILhn_wyG89_H/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-btn">Report</a>
           <a href="https://github.com/aditya-r123/RoboStack" target="_blank" rel="noopener noreferrer" className="nav-btn">Code</a>
           <a href="https://drive.google.com/file/d/1saefkOZ7JMBsR7isyB3fwOs-rRb12ery/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-btn">Demo</a>
         </div>
@@ -103,12 +103,12 @@ moving naturally and efficiently.
         width="560"
         height="315"
         src="https://www.youtube.com/embed/8q8GDTlBrT4"
-        title="Demo: Task 1"
+        title="3x3 stacking, one color per stack"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <div className="video-caption">Demo: Task 1</div>
+      <div className="video-caption">Full Demo</div>
     </div>
 
     <div className="video-col">
@@ -121,7 +121,7 @@ moving naturally and efficiently.
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <div className="video-caption">Demo: Task 2</div>
+      <div className="video-caption">3 by 3 stacks: one color per stack</div>
     </div>
   </div>
 
@@ -136,7 +136,7 @@ moving naturally and efficiently.
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <div className="video-caption">Demo: Task 3</div>
+      <div className="video-caption">Alternating Color Stacks</div>
     </div>
 
     <div className="video-col">
@@ -149,7 +149,7 @@ moving naturally and efficiently.
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      <div className="video-caption">Demo: Task 4</div>
+      <div className="video-caption">5 by 2 stacks: one color per stack</div>
     </div>
   </div>
 </section>
