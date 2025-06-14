@@ -25,11 +25,11 @@ function App() {
         The goal of this project is to develop a control
 policy for a RoboSuite robot to autonomously detect and
 manipulate colored blocks in a simulated environment,
-stacking them into towers based on color. The robot must
-identify individual blocks by color, select appropriate
-base blocks for each color category, and stack remaining
+stacking them into towers based on color. We created RoboStack, a robot that
+identifies individual blocks by color, selects appropriate
+base blocks for each color category, and stacks remaining
 blocks of the same color on top of their respective bases.
-Additionally, the robot must navigate the workspace
+Additionally, the robot navigates the workspace
 carefully, avoiding collisions with existing towers and
 moving naturally and efficiently.
         </p>
